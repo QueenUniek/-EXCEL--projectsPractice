@@ -1,0 +1,26 @@
+BEFORE UPLOAD EXCEL INTO SQL:
+
+0. Make a copy/Backup of datasets (in case)
+
+1. remove duplicates 
+> Select all > data > data tools(remove duplicates)
+
+2.  change cases: =UPPER() = PROPER() =LOWER()
+
+3. Select all > Filter 
+(To look at attributes listed on our data column)
+(To search any attributes that are different/distinct)
+- filter/deselect certain attributes we can manually fix
+
+4. Remove unnessary spacings
+=TRIM()
+
+5. Change currency symbol (usually dtype: test) into numbers
+- to ensure sql proper filing
+SELECT>HOME>NUMBER (change dtype)
+
+6. Change date format
+SELECT> HOME > NUMBER > DATE (SHORT DATE)
+
+7. Copy our fixed column to existing column
+SELECT> COPY> PASTE AS VALUES (Copied as String)
